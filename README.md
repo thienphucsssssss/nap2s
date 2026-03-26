@@ -3,7 +3,7 @@ Nap2S ![Supported server version](https://img.shields.io/badge/minecraft-1.21+-b
 
 Plugin nạp thẻ cào & chuyển khoản ngân hàng cho server Minecraft. Hỗ trợ nhiều cổng gạch thẻ, QR code thanh toán in-game, giao diện native cho Bedrock/PE, và hệ thống quản trị doanh thu toàn diện.
 
-**Cổng nạp thẻ:** ChargingWS-v2, Card2K, Trumcao, TSRPay, NhapThe, GameBank
+**Cổng nạp thẻ:** ChargingWS-v2.
 
 **Cổng chuyển khoản:** [SePay](https://sepay.vn/) (VietQR), [PayOS](https://payos.vn/) (Payment Link)
 
