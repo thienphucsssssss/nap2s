@@ -140,6 +140,7 @@ Hình ảnh
 ===========
 
 **/napthe**
+![Thiết kế chưa có tên](https://github.com/user-attachments/assets/9a175015-581c-4769-b95a-771c8d235a11)
 
 ---
 
