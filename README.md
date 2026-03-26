@@ -3,7 +3,7 @@ Nap2S ![Supported server version](https://img.shields.io/badge/minecraft-1.21+-b
 
 Plugin nạp thẻ cào và chuyển khoản ngân hàng cho server Minecraft. Hỗ trợ nhiều cổng gạch thẻ, quét QR ngay trong game, giao diện riêng cho người chơi Bedrock/PE, và công cụ quản lý doanh thu cho admin.
 
-**Cổng nạp thẻ:** ChargingWS-v2, Card2K, Trumcao, TSRPay, NhapThe, GameBank
+**Cổng nạp thẻ:** ChargingWS-v2, Card2K, Thesieure, Gachthe1s,...
 
 **Cổng chuyển khoản:** [SePay](https://sepay.vn/) (VietQR), [PayOS](https://payos.vn/)
 
@@ -11,7 +11,7 @@ Tính năng
 ===========
 
 **Nạp thẻ cào**
-- Hỗ trợ 6 cổng gạch thẻ, tự chuyển cổng dự phòng khi cổng chính lỗi
+- Hỗ trợ nhiều cổng gạch thẻ, tự chuyển cổng dự phòng khi cổng chính lỗi
 - Khuyến mãi riêng theo loại thẻ, theo cổng
 - Hẹn giờ khuyến mãi: tự bật/tắt, hiển thị trên giao diện
 - Giao diện linh hoạt, thay đổi vị trí icon tùy ý
@@ -33,7 +33,7 @@ Tính năng
 - Tự nhận biết người chơi Bedrock, không cần cài thêm gì
 
 **Quản trị**
-- API key được mã hóa, lưu trong database — không lộ qua file
+- API key được mã hóa, lưu trong database — không lộ qua file config
 - Giới hạn số lần nạp và tổng tiền mỗi ngày (chống lạm dụng)
 - Ghi lại mọi thao tác admin
 - Báo cáo doanh thu theo ngày, tuần, tháng
@@ -101,16 +101,21 @@ Dùng với PlaceholderAPI để hiển thị top nạp trên scoreboard, hologr
 ```
 plugins/Nap2S/
 ├── menu/
-│   └── napthe/
-│       ├── loaithe.yml          # Giao diện chọn loại thẻ
-│       └── menhgia.yml          # Giao diện chọn mệnh giá
+│   ├── napthe/
+│   │   ├── loaithe.yml          # Giao diện chọn loại thẻ
+│   │   └── menhgia.yml          # Giao diện chọn mệnh giá
+│   └── admin/
+│       └── dashboard.yml        # Giao diện quản trị
 ├── providers/
-│   ├── chargingws.yml           # Cổng nạp thẻ (thêm API key tại đây)
-│   └── card2k.yml
+│   └── default.yml              # Cổng nạp thẻ mặc định
 ├── config.yml                   # Cài đặt chung
 ├── banking.yml                  # Cài đặt chuyển khoản
+├── providers.yml                # Danh sách cổng nạp thẻ
 ├── messages.yml                 # Tin nhắn trong game
-└── mocnap.yml                   # Mốc nạp tích lũy
+├── mocnap.yml                   # Mốc nạp cá nhân
+├── mocnaptong.yml               # Mốc nạp tổng server
+├── khuyenmai.yml                # Lịch khuyến mãi
+└── discord.yml                  # Thông báo Discord
 ```
 
 - Giao diện nạp thẻ chỉnh tại `loaithe.yml` và `menhgia.yml`
