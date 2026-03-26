@@ -143,4 +143,4 @@ Hình ảnh
 
 ---
 
-Plugin được phát triển dựa trên nền tảng [DotMan](https://github.com/minevn/dotman), bổ sung thêm nạp chuyển khoản, giao diện Bedrock, bảo mật API key, và quản lý doanh thu.
+Plugin được phát triển dựa trên nền tảng [DotMan](https://github.com/minevn/dotman) và lấy ý tưởng từ các plugin nạp thẻ hiện nay, bổ sung thêm nạp chuyển khoản, giao diện Bedrock, bảo mật API key, và quản lý doanh thu.
