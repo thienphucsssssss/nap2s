@@ -139,7 +139,7 @@ Cần mở cổng mạng (mặc định 3510) hoặc dùng reverse proxy nếu s
 Hình ảnh
 ===========
 
-> *Thêm ảnh chụp màn hình tại đây*
+**/napthe**
 
 ---
 
