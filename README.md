@@ -149,26 +149,26 @@ Hình ảnh
 **/napatm**
 ===========
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b7245720-be1e-45a7-b824-7f24d0916ada" width="400"/>
-  <img src="https://github.com/user-attachments/assets/db1c5bb8-fd4f-455c-8bc0-57f4e61600d2" width="400"/>
-  <img src="https://github.com/user-attachments/assets/f900b4fe-3053-4b8d-8d22-8bcb950bb367" width="400"/>
-  <img src="https://github.com/user-attachments/assets/b7a5ab8f-d5a0-4d44-9be7-86447ccd385b" width="400"/>
+  <img src="https://github.com/user-attachments/assets/b7245720-be1e-45a7-b824-7f24d0916ada" width="500"/>
+  <img src="https://github.com/user-attachments/assets/db1c5bb8-fd4f-455c-8bc0-57f4e61600d2" width="500"/>
+  <img src="https://github.com/user-attachments/assets/f900b4fe-3053-4b8d-8d22-8bcb950bb367" width="500"/>
+  <img src="https://github.com/user-attachments/assets/b7a5ab8f-d5a0-4d44-9be7-86447ccd385b" width="500"/>
 </p>
 
 **/napthe lishsu**
 ===========
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6b423b35-8e05-4af0-8ed6-1315e9cd27e6" width="400"/>
-  <img src="https://github.com/user-attachments/assets/8bd1c4ab-18d8-4dc8-bb7c-3e7f8aa545e0" width="400"/>
+  <img src="https://github.com/user-attachments/assets/6b423b35-8e05-4af0-8ed6-1315e9cd27e6" width="500"/>
+  <img src="https://github.com/user-attachments/assets/8bd1c4ab-18d8-4dc8-bb7c-3e7f8aa545e0" width="500"/>
 </p>
 
 **Bảo mật / mã hóa dữ liệu**
 ===========
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/75044e58-7805-458c-baea-035cf7cec56e" width="400"/>
-  <img src="https://github.com/user-attachments/assets/f1871be8-f81d-4cfb-a833-cd4546efb675" width="400"/>
-  <img src="https://github.com/user-attachments/assets/c8046806-6144-4a53-9dc3-c99c1ef363c6" width="400"/>
-  <img src="https://github.com/user-attachments/assets/e3419ac3-e0ff-48bc-b262-7a5ebd7a0b96" width="400"/>
+  <img src="https://github.com/user-attachments/assets/75044e58-7805-458c-baea-035cf7cec56e" width="500"/>
+  <img src="https://github.com/user-attachments/assets/f1871be8-f81d-4cfb-a833-cd4546efb675" width="500"/>
+  <img src="https://github.com/user-attachments/assets/c8046806-6144-4a53-9dc3-c99c1ef363c6" width="500"/>
+  <img src="https://github.com/user-attachments/assets/e3419ac3-e0ff-48bc-b262-7a5ebd7a0b96" width="500"/>
 </p>
 
 
