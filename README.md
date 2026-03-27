@@ -148,6 +148,14 @@ Hình ảnh
 
 **/napatm**
 ===========
+<img width="1920" height="1080" alt="atmgui" src="https://github.com/user-attachments/assets/b7245720-be1e-45a7-b824-7f24d0916ada" />
+<img width="1920" height="1080" alt="atmgui2" src="https://github.com/user-attachments/assets/db1c5bb8-fd4f-455c-8bc0-57f4e61600d2" />
+<img width="1920" height="1080" alt="atmguipe" src="https://github.com/user-attachments/assets/f900b4fe-3053-4b8d-8d22-8bcb950bb367" />
+<img width="1920" height="1080" alt="atmguipe2" src="https://github.com/user-attachments/assets/b7a5ab8f-d5a0-4d44-9be7-86447ccd385b" />
+
+**/napthe lishsu**
+===========
+<img width="1920" height="1080" alt="napthe lichsu" src="https://github.com/user-attachments/assets/6b423b35-8e05-4af0-8ed6-1315e9cd27e6" />
 
 ---
 
