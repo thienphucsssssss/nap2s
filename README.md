@@ -156,6 +156,16 @@ Hình ảnh
 **/napthe lishsu**
 ===========
 <img width="1920" height="1080" alt="napthe lichsu" src="https://github.com/user-attachments/assets/6b423b35-8e05-4af0-8ed6-1315e9cd27e6" />
+<img width="1920" height="1080" alt="tracuugd" src="https://github.com/user-attachments/assets/8bd1c4ab-18d8-4dc8-bb7c-3e7f8aa545e0" />
+
+**Bảo mật / mã hóa dữ liệu**
+===========
+<img width="1332" height="402" alt="setkey" src="https://github.com/user-attachments/assets/f1871be8-f81d-4cfb-a833-cd4546efb675" />
+<img width="1333" height="343" alt="viewkeys" src="https://github.com/user-attachments/assets/c8046806-6144-4a53-9dc3-c99c1ef363c6" />
+<img width="1320" height="738" alt="log" src="https://github.com/user-attachments/assets/91836377-adb1-49e6-a756-20a321b05ff4" />
+
+**Cấu hình tự động xoay cổng**
+===========
 
 ---
 
