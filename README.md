@@ -142,28 +142,29 @@ Hình ảnh
 **/napthe**
 ===========
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9a175015-581c-4769-b95a-771c8d235a11" width="500"/>
-  <img src="https://github.com/user-attachments/assets/3b082a0f-fa8b-4bf5-ae2c-f31863897953" width="500"/>
+  <img src="https://github.com/user-attachments/assets/9a175015-581c-4769-b95a-771c8d235a11" width="400"/>
+  <img src="https://github.com/user-attachments/assets/3b082a0f-fa8b-4bf5-ae2c-f31863897953" width="400"/>
 </p>
 
 **/napatm**
 ===========
-<img width="1920" height="1080" alt="atmgui" src="https://github.com/user-attachments/assets/b7245720-be1e-45a7-b824-7f24d0916ada" width="500"/>
-<img width="1920" height="1080" alt="atmgui2" src="https://github.com/user-attachments/assets/db1c5bb8-fd4f-455c-8bc0-57f4e61600d2" width="500"/>
-<img width="1920" height="1080" alt="atmguipe" src="https://github.com/user-attachments/assets/f900b4fe-3053-4b8d-8d22-8bcb950bb367" width="500"/>
-<img width="1920" height="1080" alt="atmguipe2" src="https://github.com/user-attachments/assets/b7a5ab8f-d5a0-4d44-9be7-86447ccd385b" width="500"/>
+<img width="1920" height="1080" alt="atmgui" src="https://github.com/user-attachments/assets/b7245720-be1e-45a7-b824-7f24d0916ada" width="400"/>
+<img width="1920" height="1080" alt="atmgui2" src="https://github.com/user-attachments/assets/db1c5bb8-fd4f-455c-8bc0-57f4e61600d2" width="400"/>
+<img width="1920" height="1080" alt="atmguipe" src="https://github.com/user-attachments/assets/f900b4fe-3053-4b8d-8d22-8bcb950bb367" width="400"/>
+<img width="1920" height="1080" alt="atmguipe2" src="https://github.com/user-attachments/assets/b7a5ab8f-d5a0-4d44-9be7-86447ccd385b" width="400"/>
 
 **/napthe lishsu**
 ===========
-<img width="1920" height="1080" alt="napthe lichsu" src="https://github.com/user-attachments/assets/6b423b35-8e05-4af0-8ed6-1315e9cd27e6" width="500"/>
-<img width="1920" height="1080" alt="tracuugd" src="https://github.com/user-attachments/assets/8bd1c4ab-18d8-4dc8-bb7c-3e7f8aa545e0" width="500"/>
+<img width="1920" height="1080" alt="napthe lichsu" src="https://github.com/user-attachments/assets/6b423b35-8e05-4af0-8ed6-1315e9cd27e6" width="400"/>
+<img width="1920" height="1080" alt="tracuugd" src="https://github.com/user-attachments/assets/8bd1c4ab-18d8-4dc8-bb7c-3e7f8aa545e0" width="400"/>
 
 **Bảo mật / mã hóa dữ liệu**
 ===========
-<img width="817" height="504" alt="cmd" src="https://github.com/user-attachments/assets/75044e58-7805-458c-baea-035cf7cec56e" width="500"/>
-<img width="1332" height="402" alt="setkey" src="https://github.com/user-attachments/assets/f1871be8-f81d-4cfb-a833-cd4546efb675" width="500"/>
-<img width="1333" height="343" alt="viewkeys" src="https://github.com/user-attachments/assets/c8046806-6144-4a53-9dc3-c99c1ef363c6" width="500"/>
-<img width="1320" height="738" alt="log" src="https://github.com/user-attachments/assets/91836377-adb1-49e6-a756-20a321b05ff4" width="500"/>
+<img width="817" height="504" alt="cmd" src="https://github.com/user-attachments/assets/75044e58-7805-458c-baea-035cf7cec56e" width="400"/>
+<img width="1332" height="402" alt="setkey" src="https://github.com/user-attachments/assets/f1871be8-f81d-4cfb-a833-cd4546efb675" width="400"/>
+<img width="1333" height="343" alt="viewkeys" src="https://github.com/user-attachments/assets/c8046806-6144-4a53-9dc3-c99c1ef363c6" width="400"/>
+<img width="817" height="504" alt="cmd" src="https://github.com/user-attachments/assets/e3419ac3-e0ff-48bc-b262-7a5ebd7a0b96" width="400"/>
+
 
 **Cấu hình tự động xoay cổng**
 ===========
