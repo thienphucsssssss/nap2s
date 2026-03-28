@@ -30,7 +30,7 @@ Tính năng
 - Form chuyển khoản: chọn nhanh hoặc nhập số tiền
 - Xem lịch sử giao dịch: danh sách → chạm để xem chi tiết
 - Hiển thị khuyến mãi ngay trên form (VD: `Viettel +20%`)
-- Tự nhận biết người chơi Bedrock, không cần cài thêm gì
+- Tự nhận biết người chơi Bedrock.
 
 **Quản trị**
 - API key được mã hóa, lưu trong database — không lộ qua file config
@@ -59,9 +59,11 @@ Hướng dẫn sử dụng
 **Cài đặt:**
 
 1. Bỏ `Nap2S.jar` và `MineVNLib.jar` vào `plugins/`
-2. Khởi động server — plugin tự tạo file cấu hình mẫu
-3. Chạy `/nap2s setup` trong game — có hướng dẫn từng bước
-4. Sửa cấu hình theo hướng dẫn, rồi `/nap2s reload`
+2. Khởi động server — plugin sinh `server-id` và tạo file cấu hình mẫu
+3. Gửi `server-id` (in trong console) cho admin để nhận license key
+4. Điền `license-key` vào `config.yml`, khởi động lại server
+5. Chạy `/nap2s setup` trong game — có hướng dẫn từng bước
+6. Sửa cấu hình theo hướng dẫn, rồi `/nap2s reload`
 
 **Danh sách lệnh:**
 
@@ -100,22 +102,24 @@ Dùng với PlaceholderAPI để hiển thị top nạp trên scoreboard, hologr
 
 ```
 plugins/Nap2S/
+├── data/
+│   └── server-id.dat              # ID server (tự sinh lần đầu)
 ├── menu/
 │   ├── napthe/
-│   │   ├── loaithe.yml          # Giao diện chọn loại thẻ
-│   │   └── menhgia.yml          # Giao diện chọn mệnh giá
+│   │   ├── loaithe.yml            # Giao diện chọn loại thẻ
+│   │   └── menhgia.yml            # Giao diện chọn mệnh giá
 │   └── admin/
-│       └── dashboard.yml        # Giao diện quản trị
+│       └── dashboard.yml          # Giao diện quản trị
 ├── providers/
-│   └── default.yml              # Cổng nạp thẻ mặc định
-├── config.yml                   # Cài đặt chung
-├── banking.yml                  # Cài đặt chuyển khoản
-├── providers.yml                # Danh sách cổng nạp thẻ
-├── messages.yml                 # Tin nhắn trong game
-├── mocnap.yml                   # Mốc nạp cá nhân
-├── mocnaptong.yml               # Mốc nạp tổng server
-├── khuyenmai.yml                # Lịch khuyến mãi
-└── discord.yml                  # Thông báo Discord
+│   └── default.yml                # Cổng nạp thẻ mặc định
+├── config.yml                     # Cài đặt chung + license-key
+├── banking.yml                    # Cài đặt chuyển khoản
+├── providers.yml                  # Danh sách cổng nạp thẻ
+├── messages.yml                   # Tin nhắn trong game
+├── mocnap.yml                     # Mốc nạp cá nhân
+├── mocnaptong.yml                 # Mốc nạp tổng server
+├── khuyenmai.yml                  # Lịch khuyến mãi
+└── discord.yml                    # Thông báo Discord
 ```
 
 - Giao diện nạp thẻ chỉnh tại `loaithe.yml` và `menhgia.yml`
