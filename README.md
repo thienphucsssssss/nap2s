@@ -159,7 +159,7 @@ Hình ảnh
   <img src="https://github.com/user-attachments/assets/b7a5ab8f-d5a0-4d44-9be7-86447ccd385b" width="500"/>
 </p>
 
-**/napatm lishsu**
+**/napatm lichsu**
 ===========
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6b423b35-8e05-4af0-8ed6-1315e9cd27e6" width="500"/>
