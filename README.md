@@ -1,3 +1,5 @@
+<img width="2227" height="859" alt="logo2s" src="https://github.com/user-attachments/assets/ccf8a5d6-c838-425b-a1ee-f49b6132fecb" />
+
 Nap2S ![Supported server version](https://img.shields.io/badge/minecraft-1.21+-brightgreen) ![Bedrock](https://img.shields.io/badge/bedrock-hỗ%20trợ-orange)
 ===========
 
