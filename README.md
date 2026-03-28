@@ -39,7 +39,7 @@ Tính năng
 - Giới hạn số lần nạp và tổng tiền mỗi ngày (chống lạm dụng)
 - Ghi lại mọi thao tác admin
 - Báo cáo doanh thu theo ngày, tuần, tháng
-- Kiểm tra cấu hình khi khởi động — báo thiếu gì ngay trong console
+- Kiểm tra cấu hình khi khởi động — báo thiếu ngay trong console
 
 **Mốc nạp & Top nạp**
 - Top nạp toàn thời gian, theo tuần, theo tháng
