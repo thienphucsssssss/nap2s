@@ -51,7 +51,7 @@ Hướng dẫn sử dụng
 **Cần có:**
 
 - [Paper](https://papermc.io/) 1.21+ (hoặc Folia)
-- [MineVNLib](https://github.com/minevn) — thư viện chung
+- [MineVNLib](https://github.com/minevn/minevn-library) — thư viện chung
 - [PlayerPoints](https://www.spigotmc.org/resources/playerpoints.80745/) — quản lý xu
 - (Tùy chọn) [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) — hiển thị top nạp
 - (Tùy chọn) [Floodgate](https://geysermc.org/) — giao diện riêng cho Bedrock
