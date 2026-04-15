@@ -3,9 +3,9 @@
 Nap2S ![Supported server version](https://img.shields.io/badge/minecraft-1.21+-brightgreen) ![Bedrock](https://img.shields.io/badge/bedrock-hỗ%20trợ-orange)
 ===========
 
-Plugin nạp thẻ cào và chuyển khoản ngân hàng cho server Minecraft. Hỗ trợ nhiều cổng gạch thẻ, quét QR ngay trong game, giao diện riêng cho người chơi Bedrock/PE, và công cụ quản lý doanh thu cho admin.
+Plugin nạp thẻ cào và chuyển khoản ngân hàng cho server Minecraft. Hỗ trợ nhiều cổng nạp, quét QR ngay trong game, giao diện riêng cho Bedrock/PE, và bộ công cụ quản trị doanh thu cho admin.
 
-**Cổng nạp thẻ:** ChargingWS-v2, Card2K, Thesieure, Gachthe1s,...
+**Cổng nạp thẻ:** ChargingWS-v2, Card2K, TheSieuRe, Gachthe1s,...
 
 **Cổng chuyển khoản:** [SePay](https://sepay.vn/) (VietQR), [PayOS](https://payos.vn/)
 
@@ -13,62 +13,67 @@ Tính năng
 ===========
 
 **Nạp thẻ cào**
-- Hỗ trợ nhiều cổng gạch thẻ, tự chuyển cổng dự phòng khi cổng chính lỗi
-- Khuyến mãi riêng theo loại thẻ, theo cổng
-- Hẹn giờ khuyến mãi: tự bật/tắt, hiển thị trên giao diện
-- Giao diện linh hoạt, thay đổi vị trí icon tùy ý
+- Hỗ trợ nhiều cổng nạp thẻ, có thể cấu hình route chính/phụ
+- Hỗ trợ định tuyến theo `best-rate` hoặc `priority`
+- Khuyến mãi riêng theo loại thẻ
+- Giao diện menu tùy biến qua file YAML
+- Hỗ trợ lưu key an toàn bằng lệnh `/nap2s setkey`
 
 **Nạp chuyển khoản**
-- Tạo mã QR tức thì — hỗ trợ tất cả ngân hàng Việt Nam
-- Mã QR hiển thị trên bản đồ trong game — quét ngay bằng điện thoại
+- Tạo mã QR tức thì cho giao dịch
+- Hỗ trợ tất cả ngân hàng Việt Nam qua VietQR
 - Có trang thanh toán riêng mở trên trình duyệt
-- Tự nhận biết khi người chơi đã chuyển tiền, cộng xu ngay lập tức
+- Tự nhận biết khi người chơi đã chuyển tiền và cộng xu
 - Đếm ngược thời gian hết hạn đơn
-- Nhập số tiền tùy chọn hoặc chọn nhanh mệnh giá có sẵn
+- Hỗ trợ chọn nhanh mệnh giá hoặc nhập số tiền tùy chỉnh
 
 **Bedrock / PE**
-- Giao diện riêng cho người chơi Bedrock — không dùng giao diện rương
+- Giao diện riêng cho người chơi Bedrock bằng native form
 - Form nạp thẻ: chọn loại thẻ, mệnh giá, nhập seri và mã thẻ
 - Form chuyển khoản: chọn nhanh hoặc nhập số tiền
-- Xem lịch sử giao dịch: danh sách → chạm để xem chi tiết
-- Hiển thị khuyến mãi ngay trên form (VD: `Viettel +20%`)
-- Tự nhận biết người chơi Bedrock.
+- Xem lịch sử giao dịch: danh sách → bấm để xem chi tiết
+- Hiển thị khuyến mãi ngay trên form
+- Tự nhận biết người chơi Bedrock qua Floodgate
 
 **Quản trị**
-- API key được mã hóa, lưu trong database — không lộ qua file config
-- Giới hạn số lần nạp và tổng tiền mỗi ngày (chống lạm dụng)
-- Ghi lại mọi thao tác admin
+- API key và key nhạy cảm có thể lưu trong database
+- Ghi lại thao tác admin
 - Báo cáo doanh thu theo ngày, tuần, tháng
-- Kiểm tra cấu hình khi khởi động — báo thiếu ngay trong console
+- Kiểm tra cấu hình khi khởi động
+- Giới hạn số lần nạp và tổng tiền nạp mỗi ngày để chống lạm dụng
 
 **Mốc nạp & Top nạp**
 - Top nạp toàn thời gian, theo tuần, theo tháng
-- Mốc nạp cá nhân + mốc nạp cả server cùng góp
+- Mốc nạp cá nhân
+- Mốc nạp tổng toàn server
 - Thanh tiến độ hiển thị trên BossBar
-- Chạy nhiều server dùng chung database: top nạp và mốc nạp tự đồng bộ
+- Hỗ trợ nhiều server dùng chung database
+
+**Bảo vệ bản quyền**
+- Kích hoạt bằng `license-key`
+- Mỗi server có `server-id` riêng
+- Xác thực online khi khởi động
+- Hỗ trợ quản lý license riêng cho từng khách hàng
 
 Hướng dẫn sử dụng
 ===========
 
-**Cần có:**
-
-- [Paper](https://papermc.io/) 1.21+ (hoặc Folia)
-- [MineVNLib](https://github.com/minevn/minevn-library) — thư viện chung
+**Yêu cầu**
+- [Paper](https://papermc.io/) 1.21+
 - [PlayerPoints](https://www.spigotmc.org/resources/playerpoints.80745/) — quản lý xu
 - (Tùy chọn) [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) — hiển thị top nạp
 - (Tùy chọn) [Floodgate](https://geysermc.org/) — giao diện riêng cho Bedrock
 
-**Cài đặt:**
+**Cài đặt**
+1. Bỏ `Nap2S.jar` vào thư mục `plugins/`
+2. Khởi động server để plugin tạo file cấu hình mẫu và sinh `server-id`
+3. Gửi `server-id` cho admin để nhận `license-key`
+4. Điền `license-key` vào `config.yml`
+5. Khởi động lại server
+6. Chạy `/nap2s setup` trong game để xem hướng dẫn cấu hình từng bước
+7. Hoàn tất cấu hình, sau đó dùng `/nap2s reload`
 
-1. Bỏ `Nap2S.jar` và `MineVNLib.jar` vào `plugins/`
-2. Khởi động server — plugin sinh `server-id` và tạo file cấu hình mẫu
-3. Gửi `server-id` (in trong console) cho admin để nhận license key
-4. Điền `license-key` vào `config.yml`, khởi động lại server
-5. Chạy `/nap2s setup` trong game — có hướng dẫn từng bước
-6. Sửa cấu hình theo hướng dẫn, rồi `/nap2s reload`
-
-**Danh sách lệnh:**
-
+**Lệnh**
 | Lệnh | Chức năng | Quyền |
 |---|---|---|
 | `/napthe` | Mở giao diện nạp thẻ | Người chơi |
@@ -78,69 +83,74 @@ Hướng dẫn sử dụng
 | `/napatm lichsu` | Xem lịch sử chuyển khoản | Người chơi |
 | `/napatm status` | Kiểm tra đơn đang chờ | Người chơi |
 | `/napatm cancel` | Hủy đơn đang chờ | Người chơi |
-| `/topnap` | Xem bảng xếp hạng nạp | nap2s.topnap |
-| `/nap2s setup` | Hướng dẫn cài đặt lần đầu | nap2s.admin |
-| `/nap2s reload` | Tải lại cấu hình | nap2s.admin |
-| `/nap2s report [today\|week\|month]` | Báo cáo doanh thu | nap2s.admin |
-| `/nap2s setkey <key> <value>` | Lưu API key mã hóa vào DB | nap2s.admin |
-| `/nap2s napthucong <player> <xu>` | Cộng xu thủ công | nap2s.admin |
-| `/nap2s tracuugd <mã>` | Tra cứu giao dịch | nap2s.admin |
-| `/nap2s lichsu` | Xem lịch sử nạp | nap2s.admin |
-| `/nap2s auditlog` | Xem nhật ký thao tác admin | nap2s.admin |
+| `/topnap` | Xem bảng xếp hạng nạp | `nap2s.topnap` |
+| `/nap2s setup` | Hướng dẫn cài đặt lần đầu | `nap2s.admin` |
+| `/nap2s reload` | Tải lại cấu hình | `nap2s.admin` |
+| `/nap2s report [today\|week\|month]` | Báo cáo doanh thu | `nap2s.admin` |
+| `/nap2s setkey <provider-id> <field> <value>` | Lưu key cổng nạp an toàn | `nap2s.admin` |
+| `/nap2s setkey <field> <value>` | Lưu key banking an toàn | `nap2s.admin` |
+| `/nap2s napthucong <player> <xu>` | Cộng xu thủ công | `nap2s.admin` |
+| `/nap2s tracuugd <mã>` | Tra cứu giao dịch | `nap2s.admin` |
+| `/nap2s lichsu` | Xem lịch sử nạp | `nap2s.admin` |
+| `/nap2s auditlog` | Xem nhật ký thao tác admin | `nap2s.admin` |
 
-**Placeholder:**
+Placeholder
+===========
 
 Dùng với PlaceholderAPI để hiển thị top nạp trên scoreboard, hologram, tab...
 
 | Placeholder | Chức năng | Ghi chú |
 |---|---|---|
 | `%NAP2S_TOP_DONATE_TOTAL_X_PLAYER%` | Tên người chơi đứng top X | Đổi `TOTAL` thành `WEEK` hoặc `MONTH` để lấy top tuần/tháng |
-| `%NAP2S_TOP_DONATE_TOTAL_X_VALUE%` | Số tiền nạp của top X | X là thứ hạng (1, 2, 3...) |
+| `%NAP2S_TOP_DONATE_TOTAL_X_VALUE%` | Số tiền nạp của top X | X là thứ hạng |
 | `%NAP2S_DATA_DONATE_TOTAL%` | Tổng tiền đã nạp của người chơi | Đổi `TOTAL` thành `WEEK` hoặc `MONTH` cho tuần/tháng |
 
-> Ví dụ: `%NAP2S_TOP_DONATE_TOTAL_1_PLAYER%` hiển thị tên người đứng top 1 nạp thẻ
+> Ví dụ: `%NAP2S_TOP_DONATE_TOTAL_1_PLAYER%`
 
-**Cấu trúc thư mục:**
+Cấu trúc thư mục
+===========
 
-```
+```text
 plugins/Nap2S/
 ├── data/
-│   └── server-id.dat              # ID server (tự sinh lần đầu)
+│   └── server-id.dat
 ├── menu/
 │   ├── napthe/
-│   │   ├── loaithe.yml            # Giao diện chọn loại thẻ
-│   │   └── menhgia.yml            # Giao diện chọn mệnh giá
+│   │   ├── loaithe.yml
+│   │   └── menhgia.yml
 │   └── admin/
-│       └── dashboard.yml          # Giao diện quản trị
+│       └── dashboard.yml
 ├── providers/
-│   └── default.yml                # Cổng nạp thẻ mặc định
-├── config.yml                     # Cài đặt chung + license-key
-├── banking.yml                    # Cài đặt chuyển khoản
-├── providers.yml                  # Danh sách cổng nạp thẻ
-├── messages.yml                   # Tin nhắn trong game
-├── mocnap.yml                     # Mốc nạp cá nhân
-├── mocnaptong.yml                 # Mốc nạp tổng server
-├── khuyenmai.yml                  # Lịch khuyến mãi
-└── discord.yml                    # Thông báo Discord
+│   └── default.yml
+├── config.yml
+├── banking.yml
+├── providers.yml
+├── messages.yml
+├── mocnap.yml
+├── mocnaptong.yml
+├── khuyenmai.yml
+└── discord.yml
 ```
 
-- Giao diện nạp thẻ chỉnh tại `loaithe.yml` và `menhgia.yml`
-- API key cổng nạp thẻ thêm tại file trong `providers/`, hoặc dùng lệnh `/nap2s setkey` để lưu an toàn hơn
-- Cài đặt chung tại `config.yml`, tin nhắn tại `messages.yml`
-- Nạp chuyển khoản cấu hình tại `banking.yml`
-- Mốc nạp và phần thưởng tại `mocnap.yml`
+**Ghi chú**
+- Giao diện nạp thẻ chỉnh tại `menu/napthe/`
+- Dashboard admin chỉnh tại `menu/admin/dashboard.yml`
+- Cấu hình banking tại `banking.yml`
+- Danh sách cổng nạp tại `providers.yml`
+- Mốc nạp tại `mocnap.yml` và `mocnaptong.yml`
+- Nên dùng `/nap2s setkey` để lưu key an toàn hơn thay vì để trực tiếp trong file
 
 Webhook
 ===========
 
-Plugin có máy chủ web nhỏ tích hợp sẵn để nhận thông báo thanh toán:
+Plugin có webserver tích hợp để nhận thông báo thanh toán:
 
 | Cổng | Địa chỉ webhook |
 |---|---|
-| SePay | `https://tên-miền-của-bạn/nap2s/ipn` |
-| PayOS | `https://tên-miền-của-bạn/nap2s/ipn/payos` |
+| SePay | `https://ten-mien-cua-ban/nap2s/ipn` |
+| PayOS | `https://ten-mien-cua-ban/nap2s/ipn/payos` |
 
-Cần mở cổng mạng (mặc định 3510) hoặc dùng reverse proxy nếu server nằm sau NAT.
+Nếu server nằm sau NAT hoặc private network, cần mở cổng hoặc dùng reverse proxy / tunnel.
 
 Hình ảnh
 ===========
@@ -177,10 +187,6 @@ Hình ảnh
   <img src="https://github.com/user-attachments/assets/e3419ac3-e0ff-48bc-b262-7a5ebd7a0b96" width="500"/>
 </p>
 
-
-**Cấu hình tự động xoay cổng**
-===========
-
 ---
 
-Plugin được phát triển dựa trên nền tảng [DotMan](https://github.com/minevn/dotman) và lấy ý tưởng từ các plugin nạp thẻ hiện nay, bổ sung thêm nạp chuyển khoản, giao diện Bedrock, bảo mật API key, và quản lý doanh thu.
+Nap2S là plugin premium. Repository công khai chỉ dùng để giới thiệu tính năng, hướng dẫn cài đặt và cập nhật thông tin sản phẩm.
