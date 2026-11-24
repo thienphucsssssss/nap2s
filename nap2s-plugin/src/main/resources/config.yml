@@ -1,0 +1,107 @@
+prefix: '&6&lNap2S >&r'
+
+# Tên máy chủ để ghi log và thống kê
+server: 'main'
+
+# Tên đơn vị thưởng trong game
+point-unit: 'xu'
+
+# Cổng nạp mặc định theo kiểu cũ
+# Bạn có thể bỏ qua mục này nếu dùng providers.yml
+# Mặc định plugin dùng file mẫu: plugins/Nap2S/providers/default.yml
+provider: default
+
+# Số xu người chơi nhận được theo từng mệnh giá
+donate-amounts:
+  10000: 10
+  20000: 20
+  30000: 30
+  50000: 50
+  100000: 100
+  200000: 200
+  300000: 300
+  500000: 500
+  1000000: 1000
+
+# Lệnh chạy thêm sau khi nạp thành công
+donate-commands:
+  10000:
+    - 'tell %PLAYER% Bạn vừa nạp 10.000 VNĐ'
+  20000:
+    - 'tell %PLAYER% Bạn vừa nạp 20.000 VNĐ'
+  30000:
+    - 'tell %PLAYER% Bạn vừa nạp 30.000 VNĐ'
+  50000:
+    - 'tell %PLAYER% Bạn vừa nạp 50.000 VNĐ'
+  100000:
+    - 'tell %PLAYER% Bạn vừa nạp 100.000 VNĐ'
+  200000:
+    - 'tell %PLAYER% Bạn vừa nạp 200.000 VNĐ'
+  300000:
+    - 'tell %PLAYER% Bạn vừa nạp 300.000 VNĐ'
+  500000:
+    - 'tell %PLAYER% Bạn vừa nạp 500.000 VNĐ'
+  1000000:
+    - 'tell %PLAYER% Bạn vừa nạp 1.000.000 VNĐ'
+
+manual:
+  point-base: 1
+  point-extra: 0.5
+
+# Khuyến mãi chung
+# 0.5 = cộng thêm 50%
+# 1.0 = cộng thêm 100%
+extra-rate: 0
+
+# Thời gian kết thúc khuyến mãi
+# Định dạng: dd/MM/yyyy HH:mm
+extra-until: 01/01/2030 00:00
+
+# Bật hoặc tắt từng loại thẻ
+card-types:
+  viettel: true
+  mobifone: true
+  vinaphone: true
+  vietnamobile: true
+  garena: true
+  zing: false
+  vcoin: true
+  gate: false
+  scoin: true
+
+database:
+  # Hỗ trợ: h2, mysql, mariadb
+  engine: h2
+  h2:
+    file: nap2s
+  mysql:
+    host: localhost
+    port: 3306
+    user: 'root'
+    password: ''
+    database: nap2s
+
+announce-charge: true
+check-update: false
+
+# Cách nhập liệu cho Java player (anvil = GUI đe rèn | chat = nhập qua chat)
+# Bedrock player luôn dùng chat, bất kể cấu hình này.
+card-input:
+  java-mode: anvil    # anvil | chat
+
+banking-input:
+  java-custom-amount-mode: anvil    # anvil | chat
+
+# Network mode: bật khi chạy nhiều server dùng chung 1 DB MySQL
+# Khi bật: top nạp, mốc nạp, báo cáo có thể xem cross-server
+# Yêu cầu: database engine phải là mysql hoặc mariadb
+network-mode: false
+
+# Giới hạn nạp per player mỗi ngày (chống abuse)
+rate-limit:
+  # Số lần nạp thẻ tối đa / ngày
+  max-card-per-day: 20
+  # Số lần nạp ATM/QR tối đa / ngày
+  max-banking-per-day: 10
+  # Tổng tiền nạp tối đa / ngày (50 triệu)
+  max-total-amount-per-day: 50000000

@@ -1,0 +1,96 @@
+name: "&8[&6&lNap2S&8] &fChọn loại thẻ"
+rows: 6
+
+background:
+  icon:
+    type: BLACK_STAINED_GLASS_PANE
+  fill:
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+
+frame:
+  icon:
+    type: GRAY_STAINED_GLASS_PANE
+  fill:
+    - 'xxxxxxxxx'
+    - 'x       x'
+    - 'x       x'
+    - 'x       x'
+    - 'x       x'
+    - 'xxxxxxxxx'
+
+header:
+  icon:
+    type: NETHER_STAR
+  name: "&6&lNap2S &8| &fTrung tâm nạp thẻ"
+  lore:
+    - "&7Chọn loại thẻ bạn muốn nạp."
+    - "&7Sau đó chọn đúng mệnh giá và nhập seri, mã thẻ."
+    - "&7Phần thưởng thêm sẽ hiển thị rõ ở từng loại thẻ."
+  slot: 4
+
+info:
+  icon:
+    type: WRITABLE_BOOK
+  name: "&fThông báo máy chủ"
+  slot: 11
+
+route-summary:
+  icon:
+    type: BOOK
+  name: "&fHướng dẫn nạp nhanh"
+  lore:
+    - "&71. Chọn đúng loại thẻ."
+    - "&72. Chọn đúng mệnh giá."
+    - "&73. Nhập seri và mã thẻ thật chính xác."
+  slot: 13
+
+banking-recommend:
+  icon:
+    type: EMERALD
+  name: "&6Thẻ được khuyến khích"
+  lore:
+    - "&7Loại thẻ nổi bật: &f%FEATURED_CARD%"
+    - "&7Thưởng thêm hiện tại: &6%FEATURED_BONUS%"
+    - "&8Ưu tiên những loại thẻ đang có thưởng thêm để nhận nhiều xu hơn."
+  slot: 15
+
+close:
+  icon:
+    type: BARRIER
+  name: "&cĐóng menu"
+  lore:
+    - "&7Nhấp để đóng giao diện hiện tại."
+  slot: 49
+
+cards:
+  active:
+    glow: true
+    icon:
+      type: PAPER
+    name: "&f%CARD_TYPE%"
+    lore:
+      - "&7Thưởng thêm: &6%BONUS%"
+      - "&8%BONUS_DESCRIPTION%"
+      - "&eNhấp để chọn mệnh giá"
+  disabled:
+    icon:
+      type: PAPER
+    name: "&8%CARD_TYPE% &7(tạm dừng)"
+    lore:
+      - "&cLoại thẻ này hiện chưa thể nạp."
+      - "&7Vui lòng thử lại sau."
+  blank:
+    icon:
+      type: TINTED_GLASS_PANE
+  fill:
+    - '         '
+    - '         '
+    - '  x x x  '
+    - '  x x x  '
+    - '  x x x  '
+    - '         '

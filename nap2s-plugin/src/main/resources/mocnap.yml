@@ -1,0 +1,30 @@
+# Phần thưởng nạp thẻ theo mốc
+# Các loại mốc nạp:
+#   all    - Toàn thời gian (không reset)
+#   daily  - Hằng ngày (reset mỗi ngày)
+#   week   - Hằng tuần (reset mỗi thứ 2)
+#   month  - Hằng tháng (reset ngày 1 mỗi tháng)
+mocnap:
+- type: all
+  amount: 5000000
+  commands:
+    - 'tell %player% Chúc mừng bạn đã đạt mốc 5 triệu tích lũy'
+    - 'give %player% emerald 1'
+
+- type: daily
+  amount: 50000
+  commands:
+    - 'tell %player% Chúc mừng bạn đã đạt mốc 50k nạp hôm nay!'
+    - 'give %player% diamond 1'
+
+- type: week
+  amount: 200000
+  commands:
+    - 'tell %player% Chúc mừng bạn đã đạt mốc 200k tích lũy tuần này!'
+    - 'give %player% emerald 1'
+
+- type: month
+  amount: 1000000
+  commands:
+    - 'tell %player% Chúc mừng bạn đã đạt mốc 1 triệu tích lũy tháng này!'
+    - 'give %player% emerald 1'

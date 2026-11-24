@@ -1,0 +1,90 @@
+name: "&8[&6&lNap2S&8] &fChọn mệnh giá"
+rows: 6
+
+background:
+  icon:
+    type: BLACK_STAINED_GLASS_PANE
+  fill:
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+
+frame:
+  icon:
+    type: GRAY_STAINED_GLASS_PANE
+  fill:
+    - 'xxxxxxxxx'
+    - 'x       x'
+    - 'x       x'
+    - 'x       x'
+    - 'x       x'
+    - 'xxxxxxxxx'
+
+header:
+  icon:
+    type: AMETHYST_SHARD
+  name: "&f%CARD_TYPE% &8| &6Bảng mệnh giá"
+  lore:
+    - "&7Chọn đúng mệnh giá in trên thẻ."
+    - "&7Thưởng thêm hiện tại: &6%BONUS%"
+    - "&8Nạp đúng để giao dịch được xử lý nhanh và chính xác."
+  slot: 4
+
+route-summary:
+  icon:
+    type: BOOK
+  name: "&fLưu ý giao dịch"
+  lore:
+    - "&7Nhập đúng seri và mã thẻ."
+    - "&7Không dùng lại thẻ đã nạp."
+    - "&7Kiểm tra kỹ trước khi xác nhận."
+  slot: 11
+
+guide:
+  icon:
+    type: COMPASS
+  name: "&fQuy trình nạp"
+  lore:
+    - "&71. Chọn mệnh giá đúng."
+    - "&72. Nhập seri và mã thẻ."
+    - "&73. Chờ hệ thống xử lý giao dịch."
+  slot: 13
+
+bonus-summary:
+  icon:
+    type: EMERALD
+  name: "&6Thông tin ưu đãi"
+  lore:
+    - "&7Trạng thái ưu đãi: %BONUS_BADGE%"
+    - "&7Thưởng thêm: &6%BONUS%"
+    - "&8%BONUS_DESCRIPTION%"
+  slot: 15
+
+close:
+  icon:
+    type: SPECTRAL_ARROW
+  name: "&fQuay lại"
+  lore:
+    - "&7Trở về menu chọn loại thẻ."
+  slot: 49
+
+prices:
+  glow: true
+  icon:
+    type: GOLD_INGOT
+  name: "&6%PRICE% VNĐ"
+  lore:
+    - "&7Loại thẻ: &f%CARD_TYPE%"
+    - "&7Thưởng thêm: &6%BONUS%"
+    - "&cHãy chọn đúng mệnh giá để tránh lỗi giao dịch."
+    - "&eNhấp để tiếp tục"
+  fill:
+    - '         '
+    - '         '
+    - '  x x x  '
+    - '  x x x  '
+    - '  x x x  '
+    - '         '

@@ -1,0 +1,75 @@
+# Cấu hình Discord Webhook cho Nap2S
+# - Trường enabled mặc định là true nếu không khai báo. Đặt false để tạm tắt webhook.
+# - Có thể sử dụng placeholder sau trong content/embeds:
+#   %PLAYER%, %AMOUNT%, %POINT_AMOUNT%, %POINT_UNIT%, %BALANCE%, %METHOD%, %TIME%, %SERVER%
+# - Màu (color) phải là chuỗi hex dạng "#RRGGBB" (ví dụ: "#58b9ff"). Nếu sai định dạng sẽ tự chuyển về trắng "#FFFFFF".
+# Bạn có thể dùng https://discohook.org/ để thiết kế
+
+discord-hooks:
+  # Webhook cho channel thứ nhất
+  - enabled: false
+    url: ''
+    payload:
+      username: "Nap2S"
+      content:
+        - "Thông báo nạp tiền thành công!"
+        - "Thời gian: %TIME%"
+      embeds:
+        - title: "Ting ting 💸"
+          description: "Xin cảm ơn bạn đã ủng hộ server!"
+          color: "#58b9ff"
+          author:
+            name: "Nap2S"
+          fields:
+            - name: "Người chơi"
+              value: "%PLAYER%"
+              inline: true
+            - name: "Số tiền"
+              value: "%AMOUNT% VNĐ"
+              inline: true
+            - name: "Thực nhận"
+              value: "%POINT_AMOUNT% %POINT_UNIT% (đang có %BALANCE% %POINT_UNIT%)"
+              inline: true
+            - name: "Phương thức"
+              value: "%METHOD%"
+              inline: true
+            - name: "Server"
+              value: "%SERVER%"
+              inline: true
+          footer:
+            text: "%TIME%"
+
+  # Webhook cho channel thứ hai
+  - enabled: false
+    url: ''
+    payload:
+      username: "Nap2S"
+      content:
+        - "Thông báo nạp tiền thành công!"
+        - "Thời gian: %TIME%"
+      embeds:
+        - title: "Ting ting 💸"
+          description: "Xin cảm ơn bạn đã ủng hộ server!"
+          color: "#58b9ff"
+          author:
+            name: "Nap2S"
+          fields:
+            - name: "Người chơi"
+              value: "%PLAYER%"
+              inline: true
+            - name: "Số tiền"
+              value: "%AMOUNT% VNĐ"
+              inline: true
+            - name: "Thực nhận"
+              value: "%POINT_AMOUNT% %POINT_UNIT% (đang có %BALANCE% %POINT_UNIT%)"
+              inline: true
+            - name: "Phương thức"
+              value: "%METHOD%"
+              inline: true
+            - name: "Server"
+              value: "%SERVER%"
+              inline: true
+          footer:
+            text: "%TIME%"
+
+  # Thêm các webhook cho channel khác nếu cần

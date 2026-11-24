@@ -1,0 +1,112 @@
+input-cancel: '&aNhập &cHỦY &ađể hủy giao dịch.'
+input-canceled: '&7Bạn đã hủy giao dịch nạp thẻ.'
+input-seri: '&fHãy nhập &eSố seri &fvào khung chat.'
+input-pin: '&fHãy nhập &eMã thẻ &fvào khung chat.'
+input-anvil-seri: 'Nhập số seri'
+input-anvil-pin: 'Nhập mã thẻ'
+input-anvil-click: 'Nhấp để nhập'
+
+card-charging:
+  - '&8&m----------------------------------------'
+  - '&6&lNap2S &8| &fĐang gửi thẻ lên hệ thống'
+  - '&7Loại thẻ: &f%CARD_TYPE%'
+  - '&7Mệnh giá: &f%CARD_PRICE% VNĐ'
+  - '&7Số seri: &f%SERI%'
+  - '&7Mã thẻ: &f%CODE%'
+  - '&8&m----------------------------------------'
+
+card-route-selected: '%PREFIX% &7Cổng xử lý được chọn: %PROVIDER% &8| &7Tỷ lệ cấu hình: &a%RATE%%'
+card-route-bonus: '%PREFIX% &6Khuyến khích nạp &e%CARD_TYPE% &6để nhận thêm &e%BONUS%% %POINT_UNIT%'
+card-route-unavailable: '%PREFIX% &cLoại thẻ %CARD_TYPE% hiện chưa có cổng nạp sẵn sàng.'
+
+banking-disabled: '&cTính năng nạp ATM/QR hiện đang tắt.'
+banking-invalid-amount: '&cSố tiền không hợp lệ. Chỉ hỗ trợ: &e%AMOUNTS%'
+banking-cooldown: '&cVui lòng đợi thêm &e%SECONDS% giây &ctrước khi tạo đơn mới.'
+banking-creating: '&7Đang tạo giao dịch QR cho &e%AMOUNT% VNĐ&7...'
+banking-pending-exists: '&eBạn đang có đơn chờ thanh toán: &f%ORDER_ID%'
+banking-backend-error: '&cKhông thể tạo/kiểm tra giao dịch QR: %ERROR%'
+banking-no-pending: '&7Bạn hiện không có giao dịch ATM/QR nào đang chờ.'
+banking-expired: '&cGiao dịch &f%ORDER_ID% &cđã chuyển sang trạng thái &f%STATUS%&c.'
+banking-cancelled: '&aĐã hủy giao dịch &f%ORDER_ID%&a thành công.'
+banking-cancel-no-order: '&7Bạn không có đơn nào đang chờ để hủy.'
+banking-custom-amount-prompt: '&eNhập số tiền muốn nạp vào chat &7(tối thiểu &f%MIN% VNĐ&7, tối đa &f%MAX% VNĐ&7, chỉ nhận bội số của &f1.000 VNĐ&7). Gõ &cHỦY &7để hủy.'
+
+banking-created:
+  - '&8&m----------------------------------------'
+  - '&6&lNap2S &8| &a&lTHÔNG TIN CHUYỂN KHOẢN'
+  - '&7Ngân hàng: &f%BANK_NAME%'
+  - '&7Số tài khoản: &f%VA_NUMBER%'
+  - '&7Chủ TK: &f%VA_HOLDER%'
+  - '&7Số tiền: &e%AMOUNT% VNĐ'
+  - '&7Nội dung CK: &6&l%TRANSFER_CONTENT%'
+  - '&c&lQUAN TRỌNG: Nhập đúng nội dung chuyển khoản!'
+  - '&7Thời gian còn lại: &e%COUNTDOWN%'
+  - ''
+  - '&7Link thanh toán: &b%CHECKOUT_URL%'
+  - '&a[Nap2S] Đã tạo mã QR nạp tiền!'
+  - '&a[Nap2S] Kiểm tra túi đồ để lấy bản đồ QR code.'
+  - '&8&m----------------------------------------'
+
+banking-status:
+  - '&8&m----------------------------------------'
+  - '&6&lNap2S &8| &fTrạng thái giao dịch QR'
+  - '&7Mã đơn: &f%ORDER_ID%'
+  - '&7Số tiền: &f%AMOUNT% VNĐ'
+  - '&7Trạng thái: &f%STATUS%'
+  - '&7Ngân hàng: &f%BANK_NAME%'
+  - '&7Số tài khoản: &f%VA_NUMBER%'
+  - '&7Nội dung CK: &6&l%TRANSFER_CONTENT%'
+  - '&7Thời gian còn lại: &e%COUNTDOWN%'
+  - '&7Link thanh toán: &b%CHECKOUT_URL%'
+  - '&8&m----------------------------------------'
+
+banking-paid:
+  - '%PREFIX% &a&lGiao dịch ATM &f%ORDER_ID% &a&lđã thanh toán thành công!'
+  - '&7Bạn nhận được &e%POINTS% %POINT_UNIT%&7.'
+  - '&a&lKhuyến mãi ATM +%BONUS%%: &e+%BONUS_AMOUNT% %POINT_UNIT%'
+  - '&6&lTổng nhận: &e&l%TOTAL_POINTS% %POINT_UNIT%'
+  - '&7Mã thanh toán: &f%TRANSACTION_ID%'
+
+card-charged-successfully:
+  - '%PREFIX% &aNạp thẻ thành công.'
+  - '&7Bạn nhận được &e%AMOUNT% %POINT_UNIT% &7từ giao dịch vừa hoàn tất.'
+
+card-charged-with-extra: '&aBạn được khuyến mãi thêm &b%RATE%% &agiá trị nạp.'
+card-charged-with-extra-planned: '&aSự kiện %EXTRA_NAME% &ađang áp dụng, bạn được cộng thêm &b%RATE%%&a.'
+card-charged-with-card-bonus: '&6Loại thẻ &e%CARD_TYPE% &6đang được ưu tiên, bạn nhận thêm &e%BONUS%% %POINT_UNIT%'
+
+card-charged-sent:
+  - '%PREFIX% &aThẻ của bạn đã được gửi lên hệ thống. Hãy đợi trong giây lát.'
+
+card-charged-announce:
+  - '%PREFIX% &f%PLAYER% &7đã nạp &e%CARD_PRICE% VNĐ &7và nhận &6%AMOUNT% %POINT_UNIT%'
+
+card-charged-failed:
+  - '%PREFIX% &cNạp thẻ thất bại: %ERROR%'
+  - '&7Nếu cần, hãy liên hệ admin để được hỗ trợ.'
+
+card-charged-error:
+  - '%PREFIX% &cĐã có lỗi xảy ra trong lúc xử lý giao dịch.'
+  - '&7Vui lòng liên hệ admin để kiểm tra thêm.'
+
+ui-no-annoucement: '&7Chưa có thông báo mới. Admin có thể đặt bằng lệnh &e/nap2s thongbao'
+ui-no-banking-location: '&cAdmin chưa thiết lập khu hướng dẫn chuyển khoản.'
+
+error-unknown: '&cLỗi không xác định.'
+error-unknown-card-type: '&cLoại thẻ không hợp lệ hoặc đang tạm dừng.'
+error-unknown-card-price: '&cMệnh giá thẻ không hợp lệ.'
+error-seri-too-long: '&cSố seri quá dài, tối đa 20 ký tự.'
+error-pin-too-long: '&cMã thẻ quá dài, tối đa 20 ký tự.'
+
+log-output: '&a%ORDER%. &b%PLAYER% &8- &f%CARD_TYPE% &7(%CARD_PRICE% VNĐ) &8- &6%POINTS_RECEIVED% %POINT_UNIT% &8- &7%DATE%'
+transaction-id-details-output:
+  - '&6Mã giao dịch: &f%TRANSACTION_ID%'
+  - '&7Người chơi: &f%PLAYER%'
+  - '&7Loại nạp: &f%CARD_TYPE% &7(%CARD_PRICE% VNĐ)'
+  - '&7Nhận được: &6%POINTS_RECEIVED% %POINT_UNIT%'
+  - '&7Server: &f%SERVER%'
+  - '&7Ngày: &f%DATE%'
+
+update-available: '%PREFIX% &aĐã có phiên bản mới: &e%NEW_VERSION% &7(phiên bản hiện tại &f%CURRENT_VERSION%&7).'
+update-available-link: '&7Tải về tại: &e%URL%'
+update-latest: '%PREFIX% &aBạn đang sử dụng phiên bản mới nhất.'

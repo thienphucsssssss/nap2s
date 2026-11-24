@@ -1,0 +1,135 @@
+# Cau hinh nhieu cong nap cho Nap2S
+#
+# PHAN BIET QUAN TRONG:
+#   Provider ID = ten ban tu dat (VD: provider-1, cardvip-main)
+#                 -> dung cho lenh /nap2s setkey
+#   Family      = chuan API ma cong do dung -> plugin tu xu ly
+#
+# Vi du lenh DUNG:  /nap2s setkey provider-1 partner-id xxx
+# Vi du lenh SAI:   /nap2s setkey chargingws-v2 partner-id xxx
+#                    (chargingws-v2 la family, khong phai ID cong)
+#
+# Goi y: dat ten de nho thay vi provider-1, vi du:
+#   cardvip-main:
+#   gachthe1s-backup:
+#
+# Family ho tro: chargingws-v2, gachthe1s, card2k, thesieure, cardvip
+
+routing:
+  mode: best-rate
+  fallback-to-legacy: true
+  default-provider: provider-1
+  overrides:
+    viettel: auto
+    mobifone: auto
+    vinaphone: auto
+    vietnamobile: auto
+    garena: auto
+    zing: auto
+    vcoin: auto
+    gate: auto
+    scoin: auto
+
+promotions:
+  cards:
+    viettel:
+      bonus-percent: 5
+      badge: '&6Uu tien'
+      description: '&7Loai the nay dang co ty le tot, cong them &e5% xu'
+
+providers:
+  provider-1:
+    enabled: false
+    display-name: '&6Cong nap 1'
+    family: chargingws-v2
+    priority: 100
+    partner-id: 'dien-id-cua-ban'
+    partner-key: 'dien-key-cua-ban'
+    api-url: 'https://ten-web-cua-ban.com/chargingws/v2'
+    cards:
+      viettel:
+        enabled: true
+        payout-rate: 80.0
+      mobifone:
+        enabled: true
+        payout-rate: 79.0
+      vinaphone:
+        enabled: true
+        payout-rate: 79.0
+      garena:
+        enabled: true
+        payout-rate: 81.0
+      zing:
+        enabled: true
+        payout-rate: 78.0
+      vcoin:
+        enabled: true
+        payout-rate: 78.0
+      scoin:
+        enabled: true
+        payout-rate: 72.0
+
+  provider-2:
+    enabled: false
+    display-name: '&bCong nap 2'
+    family: chargingws-v2
+    priority: 90
+    partner-id: 'dien-id-cua-ban'
+    partner-key: 'dien-key-cua-ban'
+    api-url: 'https://ten-web-khac.com/chargingws/v2'
+    cards:
+      viettel:
+        enabled: true
+        payout-rate: 79.0
+      mobifone:
+        enabled: true
+        payout-rate: 78.0
+      vinaphone:
+        enabled: true
+        payout-rate: 78.0
+      vietnamobile:
+        enabled: true
+        payout-rate: 76.0
+      garena:
+        enabled: true
+        payout-rate: 80.0
+      zing:
+        enabled: true
+        payout-rate: 77.0
+      vcoin:
+        enabled: true
+        payout-rate: 77.0
+      scoin:
+        enabled: true
+        payout-rate: 70.0
+
+  provider-3:
+    enabled: false
+    display-name: '&aCong nap 3'
+    family: chargingws-v2
+    priority: 80
+    partner-id: 'dien-id-cua-ban'
+    partner-key: 'dien-key-cua-ban'
+    api-url: 'https://them-mot-web-khac.com/chargingws/v2'
+    cards:
+      viettel:
+        enabled: true
+        payout-rate: 79.0
+      mobifone:
+        enabled: true
+        payout-rate: 78.0
+      vinaphone:
+        enabled: true
+        payout-rate: 78.0
+      zing:
+        enabled: true
+        payout-rate: 77.0
+      gate:
+        enabled: true
+        payout-rate: 77.0
+      vcoin:
+        enabled: true
+        payout-rate: 77.0
+      garena:
+        enabled: true
+        payout-rate: 80.0

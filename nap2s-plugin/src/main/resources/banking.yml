@@ -1,0 +1,70 @@
+enabled: false
+
+# Lệnh để người chơi mở giao diện nạp ATM/QR.
+command: napatm
+
+# Banking provider: sepay (mặc định) hoặc payos
+# - sepay: dùng SePay + VietQR, plugin tự tạo QR, webhook tại /nap2s/ipn/sepay
+# - payos: dùng PayOS API tạo payment link, webhook tại /nap2s/ipn/payos
+provider-id: sepay
+
+# Bật web nhỏ đi kèm plugin để mở trang thanh toán và nhận webhook.
+webserver-enabled: true
+webserver-port: 8585
+
+# Đường dẫn công khai để người chơi mở được trang thanh toán.
+# Bạn có thể dùng tên miền riêng, Cloudflare Tunnel hoặc ngrok.
+# Ví dụ: https://pay.example.com
+webserver-public-url: ''
+
+# === SePay (khi provider-id: sepay) ===
+# API Token: lấy trong trang quản lý SePay.
+# Secret Key: dùng để xác nhận webhook, có thể để trống nếu bạn chưa dùng.
+# Webhook URL cần cấu hình trên SePay: <webserver-public-url>/nap2s/ipn/sepay
+sepay-api-token: ''
+sepay-secret-key: ''
+
+# === PayOS (khi provider-id: payos) ===
+# Lấy Client ID, API Key, Checksum Key từ trang quản lý PayOS.
+# Webhook URL cần cấu hình trên PayOS: <webserver-public-url>/nap2s/ipn/payos
+payos-client-id: ''
+payos-api-key: ''
+payos-checksum-key: ''
+
+# Thông tin tài khoản nhận tiền.
+# bank-code là mã viết tắt của ngân hàng, ví dụ: MB, VCB, BIDV, ACB, TCB...
+bank-code: 'MB'
+bank-name: 'Tên ngân hàng của bạn'
+bank-account-number: ''
+bank-account-holder: ''
+
+# Bao lâu plugin kiểm tra đơn hết hạn.
+poll-seconds: 10
+
+# Thời gian chờ giữa 2 lần tạo đơn mới của cùng một người chơi.
+cooldown-seconds: 15
+
+# Số phút đơn còn hiệu lực.
+expires-minutes: 10
+
+# Nếu để false, mỗi người chơi chỉ có 1 đơn đang chờ tại một thời điểm.
+allow-multiple-pending: false
+
+# Thưởng thêm khi người chơi nạp bằng ATM/QR.
+# Ví dụ 20 = cộng thêm 20% xu.
+reward-bonus-percent: 20
+
+# Cho phép người chơi tự nhập số tiền.
+allow-custom-amount: true
+min-custom-amount: 1000
+max-custom-amount: 10000000
+
+# Các mốc tiền hiện sẵn trong giao diện.
+allowed-amounts:
+  - 10000
+  - 20000
+  - 50000
+  - 100000
+  - 200000
+  - 500000
+  - 1000000

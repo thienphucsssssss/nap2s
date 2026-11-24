@@ -1,0 +1,15 @@
+name: Nap2S
+api-version: 1.21
+folia-supported: false
+main: vn.twosmc.nap2s.Nap2S
+version: '${version}'
+author: Nap2S Team
+depend: [ PlayerPoints ]
+softdepend: [ PlaceholderAPI, floodgate ]
+commands:
+  nap2s:
+    permission: nap2s.admin
+  topnap:
+    permission: nap2s.topnap
+  napthe:
+  napatm:

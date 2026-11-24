@@ -1,0 +1,120 @@
+name: "&8[&6&lNap2S&8] &fBảng quản trị nạp thẻ"
+rows: 6
+
+background:
+  icon:
+    type: BLACK_STAINED_GLASS_PANE
+  fill:
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+    - 'xxxxxxxxx'
+
+frame:
+  icon:
+    type: GRAY_STAINED_GLASS_PANE
+  fill:
+    - 'xxxxxxxxx'
+    - 'x       x'
+    - 'x       x'
+    - 'x       x'
+    - 'x       x'
+    - 'xxxxxxxxx'
+
+header:
+  icon:
+    type: NETHER_STAR
+  name: "&6&lNap2S &8| &fBảng điều phối admin"
+  lore:
+    - "&7Theo dõi route, bonus và trạng thái từng loại thẻ."
+    - "&7Dùng giao diện này để kiểm tra cấu hình trước khi mở nạp."
+  slot: 4
+
+overview:
+  icon:
+    type: RECOVERY_COMPASS
+  name: "&fTổng quan hệ thống"
+  lore:
+    - "&7Chế độ định tuyến: &f%ROUTING_MODE%"
+    - "&7Cổng mặc định: %DEFAULT_PROVIDER%"
+    - "&7Số cổng đang bật: &f%PROVIDER_COUNT%"
+  slot: 11
+
+providers:
+  icon:
+    type: BOOK
+  name: "&fDanh sách cổng nạp"
+  lore:
+    - "&7Không có cổng nào đang bật."
+  slot: 13
+
+guide:
+  icon:
+    type: REDSTONE_TORCH
+  name: "&6Hướng dẫn quản lý"
+  lore:
+    - "&7Sửa file &fproviders.yml &7để thay đổi route, bonus và tỷ lệ."
+    - "&7Sau khi chỉnh, nhấn &eReload &7để áp dụng."
+    - "&7Loại thẻ nổi bật hiện tại: &f%FEATURED_CARD%"
+    - "&7Provider đang được chọn: %FEATURED_PROVIDER%"
+  slot: 15
+
+reload:
+  icon:
+    type: CLOCK
+  name: "&aReload cấu hình"
+  lore:
+    - "&7Nhấp để tải lại plugin và làm mới dashboard."
+  slot: 48
+
+legend:
+  icon:
+    type: PAPER
+  name: "&fChú thích"
+  lore:
+    - "&aSáng màu &7= loại thẻ sẵn sàng"
+    - "&8Tối màu &7= loại thẻ đang tạm dừng"
+    - "&6Bonus &7= phần thưởng cộng thêm cho người chơi"
+  slot: 49
+
+close:
+  icon:
+    type: BARRIER
+  name: "&cĐóng dashboard"
+  lore:
+    - "&7Nhấp để đóng giao diện quản trị."
+  slot: 50
+
+cards:
+  active:
+    glow: true
+    icon:
+      type: FILLED_MAP
+    name: "&f%CARD_TYPE%"
+    lore:
+      - "&7Trạng thái: %STATUS%"
+      - "&7Cổng xử lý: %PROVIDER%"
+      - "&7Tỷ lệ cấu hình: &a%RATE%%"
+      - "&7Thưởng thêm: &6%BONUS%"
+      - "&8%BONUS_DESCRIPTION%"
+  disabled:
+    icon:
+      type: MAP
+    name: "&8%CARD_TYPE% &7(tạm dừng)"
+    lore:
+      - "&7Trạng thái: %STATUS%"
+      - "&7Cổng dự kiến: %PROVIDER%"
+      - "&7Tỷ lệ cấu hình: &8%RATE%%"
+      - "&8Loại thẻ này hiện chưa sẵn sàng."
+  blank:
+    icon:
+      type: TINTED_GLASS_PANE
+  fill:
+    - '         '
+    - '         '
+    - '  x x x  '
+    - '  x x x  '
+    - '  x x x  '
+    - '         '
