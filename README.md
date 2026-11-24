@@ -5,6 +5,8 @@ Nap2S ![Supported server version](https://img.shields.io/badge/minecraft-1.21+-b
 
 Plugin nạp thẻ cào và chuyển khoản ngân hàng cho server Minecraft. Hỗ trợ nhiều cổng gạch thẻ, quét QR ngay trong game, giao diện riêng cho người chơi Bedrock/PE, và công cụ quản lý doanh thu cho admin.
 
+Nap2S được phát triển dựa trên [DotMan](https://github.com/minevn/dotman) và lấy ý tưởng từ các plugin nạp thẻ hiện có trên thị trường.
+
 Bản miễn phí khởi động mà không cần mã kích hoạt.
 
 **Cổng nạp thẻ:** Card2K, TheSieuRe, GachThe1s và các cổng tương thích ChargingWS-v2.
@@ -187,7 +189,3 @@ Hình ảnh
   <img src="https://github.com/user-attachments/assets/c8046806-6144-4a53-9dc3-c99c1ef363c6" width="500"/>
   <img src="https://github.com/user-attachments/assets/e3419ac3-e0ff-48bc-b262-7a5ebd7a0b96" width="500"/>
 </p>
-
----
-
-Nap2S là plugin premium. Repository công khai chỉ dùng để giới thiệu tính năng, hướng dẫn cài đặt và cập nhật thông tin sản phẩm.
