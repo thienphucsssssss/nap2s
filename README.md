@@ -145,16 +145,6 @@ Plugin có máy chủ web nhỏ tích hợp sẵn để nhận thông báo thanh
 
 Cần mở cổng mạng (mặc định 8585) hoặc dùng reverse proxy nếu server nằm sau NAT.
 
-## Build từ mã nguồn
-
-Dùng JDK 21. Chạy `./gradlew build` trên macOS hoặc Linux và `.\gradlew.bat build` trên Windows. Gradle chạy bộ kiểm thử và tạo JAR tại `nap2s-plugin/build/libs/Nap2S.jar`.
-
-## Nâng cấp từ bản Nap2S cũ
-
-Dừng các server dùng chung cơ sở dữ liệu và sao lưu database cùng thư mục `plugins/Nap2S/` trước khi thay JAR. Khi khởi động lần đầu, Nap2S đổi tên các bảng cũ sang tiền tố `nap2s_` và giữ dữ liệu cùng phiên bản schema. Với MySQL hoặc MariaDB dùng chung, hãy cấp quyền đổi tên bảng, khởi động một server trước và đợi nâng cấp xong rồi mới bật các server còn lại. Nếu quay lại bản cũ, hãy khôi phục bản sao lưu database cùng với JAR cũ.
-
-Nếu đã dùng mẫu Discord cũ, bạn có thể đổi tên và ảnh hiển thị trong `discord.yml` và giữ URL webhook của server.
-
 Hình ảnh
 ===========
 
